@@ -8,20 +8,40 @@
     <title>Pokemon API</title>
   </head>
   <body>
+    <h1>Pokemon VS.</h1>
     <div class="main">
-      <div class="searchBox">
-        <input
-          id="pokemonName"
-          type="Pokemon name"
-          placeholder="Pokemon name"
-        />
-        <button id="search">🔎</button>
+        <div class="pokeOne">
+          <div class="searchBox1">
+            <input
+              id="pokeOneId"
+              type="pokemone id"
+              placeholder="Type a no."
+            />
+            <button id="searchOne">🔎</button>
+          </div>
+    
+          <div class="pokemonOneBox"></div>
       </div>
-
-      <div class="pokemonBox"></div>
+      <div class="pokeTwo">
+        <div class="searchBox2">
+          <input
+            id="pokeTwoId"
+            type="Pokemon id"
+            placeholder="Type a no."
+          />
+          <button id="searchTwo">🔎</button>
+        </div>
+  
+        <div class="pokemonTwoBox"></div>
+      </div>
+    </div>
+    <div class="batBtn">
+      <button class="battleBtn" id="btn">Let's Battle!</button>
     </div>
 
+    
     <script src='api.js'></script>
     <script src="main.js"></script>
   </body>
 </html>
+

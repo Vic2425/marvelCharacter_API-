@@ -1,75 +1,149 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #0d0e0f;
-  }
-  
-  body,
-  input,
-  textarea,
-  select,
-  button {
-    color: white;
-    font: 400 1rem "Roboto", sans-serif;
-  }
-  
-  button {
-    cursor: pointer;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  main {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
-  
-  .searchBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .searchBox input {
-    border-radius: 8px 0 0 8px;
-    border: 0;
-    outline: none;
-    height: 36px;
-    margin-top: 20px;
-    padding: 4px 16px;
-    background-color: white;
-    color: #000;
-  }
-  
-  .searchBox button {
-    border-radius: 0 8px 8px 0;
-    border: 0;
-    height: 36px;
-    margin-top: 20px;
-    padding: 4px 16px;
-    background-color: white;
-  }
-  
-  .pokemonBox {
-    display: flex;
-    margin-top: 2rem;
-    justify-content: center;
-  }
-  
-  .pokemonBox img {
-    width: 200px;
-  }
-  
-  .pokemonBox p {
-    margin-top: 1rem;
-  }
-  
-  .pokemonBox .pokemonInfos {
-    padding: 2rem;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--midnightExpress);
+  --midnightExpress: #162447;
+  --CatalinaBlue: #1f4068;
+  --blueMagenta: #1b1b2f;
+  --red: #e42f5a;
+}
+
+ 
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--blueMagenta);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  /* flex-direction: row; */
+  text-align: center;
+}
+h1 {
+  color: var(--red);
+  text-align: center;
+  margin-top: 50px ;
+}
+.pokeOne {
+  flex: 50%;
+  border: 1px ;
+}
+.pokeTwo {
+  flex: 50%;
+
+}
+.searchBox1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.searchBox1 input {
+  border-radius: 15px 0 0 15px;
+  border: 0;
+  outline: none;
+  height: 30px;
+  width: 110px;
+  margin-top: 20px;
+  padding: 4px 16px;
+  background-color: rgb(233, 220, 220);
+  color: #000;
+}
+
+.searchBox1 button {
+  border-radius: 0 15px 15px 0;
+  border: 0;
+  height: 30px;
+  margin-top: 20px;
+  padding: 4px 16px;
+  background-color: rgb(250, 70, 70);
+}
+
+.pokemonOneBox {
+  /* display: flex; */
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.pokemonOneBox img {
+  width: 200px;
+}
+
+.pokemonOneBox p {
+  margin-top: 1rem;
+}
+
+.pokemonOneBox .infoOne {
+  padding: 2rem;
+}
+
+.searchBox2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBox2 input {
+  border-radius: 15px 0 0 15px;
+  border: 0;
+  outline: none;
+  height: 30px;
+  width: 110px;
+  margin-top: 20px;
+  padding: 4px 16px;
+  background-color: white;
+  color: #000;
+}
+.searchBox2 button {
+  border-radius: 0 15px 15px 0;
+  border: 0;
+  height: 30px;
+  margin-top: 20px;
+  padding: 4px 16px;
+  background-color: rgb(250, 70, 70);
+}
+.pokemonTwoBox {
+  /* display: flex; */
+  margin-top: 2rem;
+  justify-content: center;
+}
+.pokemonTwoBox img {
+  width: 200px;
+}
+.pokemonTwoBox p {
+  margin-top: 1rem;
+}
+.pokemonTwoBox .infoTwo {
+  padding: 2rem;
+}
+
+.batBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.battleBtn {
+  border: 2px var(--blueMagenta) solid;
+  border-radius: 8px;
+  height: 50px;
+  padding: 5px 15px;
+  background-color: var(--red);
+  color: var(--blueMagenta);
+  font-weight: 600;
+}
