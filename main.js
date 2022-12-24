@@ -33,7 +33,7 @@ const arrPokeTwo = () => {
       //console.log("Pokemon not found", err);
     });
     
-   };
+};
 
 const getPokeOne = () => {
    document.querySelector(".pokemonOneBox").innerHTML = `
@@ -59,7 +59,7 @@ const getPokeTwo = () => {
           alt="${capFirstLetter(pokeTwo.name)}" />
       </div>
       <div class="infoOne">
-        <h3>${capFirstLetter(pokeTwo.name)}</h3>
+        <h3>${capFirstLetter(pokeTwo.name)}</h3> 
         <p> Id: ${pokeTwo.id}</p>
         <p>Weight: ${pokeTwo.weight}</p>
         <p>Base Experience: ${pokeTwo.base_experience}</p>          
@@ -69,7 +69,7 @@ const getPokeTwo = () => {
 
 function capFirstLetter(string) {
    return string.charAt(0).toUpperCase() + string.slice(1);
- };
+};
 
 const battle = () => {
    const poke1Info = pokeOne.stats[1].base_stat;
@@ -94,6 +94,5 @@ const reset = () => {
    document.querySelector(".result").innerHTML = '';
    arrPokeOne() = '';
    arrPokeTwo() = '';
-   pokeOne() = '';
-   pokeTwo() = '';
+   
 }
