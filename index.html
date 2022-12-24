@@ -9,6 +9,7 @@
   </head>
   <body>
     <h1>Pokemon VS.</h1>
+    
     <div class="main">
       <div class="pokeOne">
         <button onclick="getPokeOne()">Get Pokemon One</button>
@@ -17,15 +18,18 @@
 
       <div class="batBtn">
         <button class="battleBtn" id="btn" onclick="battle()">Let's Battle!</button>
-        <div class="result"></div>
       </div>
-
+      <div class="result"></div>
+      
       <div class="pokeTwo">
         <button onclick="getPokeTwo()">Get Pokemon Two</button>
         <div class="pokemonTwoBox"></div>
       </div>
     </div>
-  
+    
+    <div class="reset">
+      <button onclick="reset()">Reset</button>
+    </div>
     
     <script src='api.js'></script>
     <script src="main.js"></script>
